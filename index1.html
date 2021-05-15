@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    <div class="form">
+        <div class="field">
+            <label class="label" for="inputType">Select an input type: </label>
+            <select class="input imp" name="inputType" id="inputType">
+                <option>input-type</option>
+                <option>Input</option>
+                <option>Number</option>
+                <option>Checkbox</option>
+                <option>Select</option>
+                <option>Radio</option>
+                <option>Textarea</option>
+            </select>
+        </div>
+        <div class="boxList field" style="display:none;">
+            <label class="label" for="noOfbox">NO of Box:</label>
+            <input type="number" class="input" id="boxLabel" />
+        </div>
+        <div class="field">
+            <label class="label" for="labelText">Label: </label>
+            <input class="input imp" name="label field" type="text" id="labelText" placeholder="Your text-label">
+        </div>      
+        <div class="field">
+            <label class="label" for="validationType">Validation: </label>
+            <select class="input imp" name="validationType" id="validationType">
+                <option>Blank-validation(By default)</option>
+                <option>Email-validation</option>
+                <option>number-validation</option>
+            </select>
+        </div>
+        <div class="field">
+            <button id="addInput" class="button">Add Input Field</button>
+            <button id="generateJson" class="button">Generate Code</button>
+        </div>
+        <div class="field">
+            <label class="label" for="json-code">Json-Code:</label>   
+            <textarea class="input" id="json-code" cols="30" rows="10" readonly></textarea>
+        </div> 
+        <a href="index2.html" class="button">Second page</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src= "app.js"></script>
+</body>
+</html>
